@@ -1,0 +1,12 @@
+@use './Variables.scss' as v;
+@use './Fonts.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: v.$font-Poppins;
+  }
+  
+body{
+    box-sizing: border-box;
+  }

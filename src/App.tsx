@@ -1,14 +1,13 @@
-
-import './Reset.css'
+import Router from './router/Router'
+import { RouterProvider } from 'react-router-dom'
+import './assets/styles/Main.scss'
 
 function App() {
 
 
-  return (
-    <>
-     <h2>hello world</h2>
-    </>
-  )
+  return < RouterProvider router={Router}/>
+    
+  
 }
 
 export default App

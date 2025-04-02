@@ -15,8 +15,6 @@ interface EmailInputProps{
 
 export const InputEmail: React.FC <EmailInputProps>= ({label='email*',error,disabled,register}) => {
 
-    
-
     return (
         <div className={styles.inputContainer}>
             <label className={styles.inputLabel}>

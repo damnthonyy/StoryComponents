@@ -51,6 +51,7 @@ export const WithError: Story = {
   
 export const Disabled: Story = {
     args: {
+    
       disabled: false,
       error: '',
       register: dummyRegister,

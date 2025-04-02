@@ -1,0 +1,40 @@
+@use '../../assets/styles/Variables.scss' as v;
+
+.btn-class{
+    width: v.$w-btn;
+    padding:v.$pad-btn;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: v.$br-btn;
+    border: none;
+    cursor: pointer;
+    font-size: v.$label-btn;
+    font-weight: 400;
+
+    &--SignIn {
+        background-color:v.$Colors-light-purple;
+        color: white;
+        &:hover {
+            background-color: v.$Colors-dark-purple;
+        }
+    }
+
+    &--Edit {
+        background-color: v.$Colors-light-purple;
+        color: white;
+        &:hover {
+            background-color: v.$Colors-dark-purple;
+        }
+    }
+
+    &--Delete {
+        background-color: v.$light-red;
+        color: white;
+        &:hover {
+            background-color: v.$dark-red;
+        }
+    }
+}
+

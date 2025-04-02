@@ -6,9 +6,11 @@ $font-Poppins: "Poppins", sans-serif;
 
 // COLOR
 $Colors-light-purple:#A59ACA;
+$Colors-dark-purple:#7F62E3;
 $gray:#868686;
 $black:#020202;
-$red:#FF0000;
+$light-red:#FF7777;
+$dark-red:#FF0000;
 
 
 
@@ -16,6 +18,7 @@ $red:#FF0000;
 // FONT-SIZE
 
 $h6:16px;
+$label-btn:16px;
 
 
 
@@ -23,4 +26,7 @@ $h6:16px;
 
 $w-input:240px;
 $pad-input: 6px 10px;
-$br-input:5px
+$br-input:5px;
+$w-btn:240px;
+$pad-btn:5px;
+$br-btn:5px;

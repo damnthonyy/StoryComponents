@@ -19,28 +19,28 @@
 .inputField {
     
     border: 1px solid v.$black ;
-    width: v.$w-input !important;
+    width: v.$w-input ;
     padding: v.$pad-input;
     border-radius: v.$br-input;
 
 }
 
 .default{
-    border: 1px solid v.$gray !important;
+    border: 1px solid v.$gray ;
 }
   
 
 .focus {
-    border: 1px solid v.$black !important; 
+    border: 1px solid v.$black ; 
 }
   
 
 .error {
-    border: 1px solid v.$red !important;
+    border: 1px solid v.$dark-red ;
 }
   
 .errorMessage {
-    color: v.$red;
+    color: v.$dark-red;
     font-size: v.$h6;
     font-family: v.$font-Poppins;
     display: flex;

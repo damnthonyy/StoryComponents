@@ -3,7 +3,7 @@ import "./Login.scss"
 import { InputEmail } from '../../components/InputEmail/InputEmail'
 import {InputPassword} from '../../components/InputPassword/InputPassword'
 import { useForm, SubmitHandler } from 'react-hook-form';
-
+import { Button } from '../../components/btn/Button';
 interface FormInputs {
     email: string;
     password: string;
@@ -49,12 +49,7 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
             
             />
 
-            <button style={{width:'240px', padding:'5px',gap:'5px',marginTop:'0.3rem'}}
-                type="submit"
-                disabled={disabled}>
-
-                    sign in
-            </button>
+            <Button variant='SignIn' label='Sign in' onClick={handleSubmit(onSubmit)}/>
 
         
 

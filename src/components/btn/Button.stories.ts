@@ -43,6 +43,13 @@ export const Delete:Story={
     }
 }
 
+export const GetLink:Story={
+    args:{
+        label:'get a link',
+        variant:'GetLink',
+        onClick:()=>{}
+    }
+}
 
 
 

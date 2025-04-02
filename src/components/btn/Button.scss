@@ -36,5 +36,13 @@
             background-color: v.$dark-red;
         }
     }
+
+    &--GetLink {
+        background-color: v.$Colors-light-purple;
+        color: white;
+        &:hover {
+            background-color: v.$Colors-dark-purple;
+        }
+    }
 }
 

@@ -1,4 +1,4 @@
-@use '../assets/styles/Variables.scss' as v;
+@use '../../assets/styles/Variables.scss' as v;
 
 .inputContainer {
     display: flex;
@@ -19,9 +19,8 @@
 .inputField {
     
     border: 1px solid v.$black ;
-    width: v.$w-input;
+    width: v.$w-input !important;
     padding: v.$pad-input;
-    padding: 0.5rem;
     border-radius: v.$br-input;
 
 }
@@ -44,5 +43,8 @@
     color: v.$red;
     font-size: v.$h6;
     font-family: v.$font-Poppins;
+    display: flex;
+    align-items: center;
+    margin:0;
 }
   

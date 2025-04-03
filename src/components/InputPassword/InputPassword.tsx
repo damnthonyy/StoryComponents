@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from "./InputPassword.module.scss"
 import { UseFormRegisterReturn } from 'react-hook-form';
-import { EyeOpenIcon, EyeClosedIcon } from '@radix-ui/react-icons';
+import { EyeOpenIcon, EyeClosedIcon,InfoCircledIcon } from '@radix-ui/react-icons';
 
 
 interface PasswordInputProps {
@@ -40,14 +40,14 @@ export const InputPassword: React.FC<PasswordInputProps>=({label='Password',erro
                     {...register}
                     className={`${styles.inputField} ${error ? styles.error : ''} ${disabled ? styles.default : ''}`}
                     />
-                    <button className={styles.eyeIcon} onClick={togglePassword}>
+                    <button type="button" className={styles.eyeIcon} onClick={togglePassword} aria-label="Toggle password visibility">
                         {showPassword ? CloseIcon : OpenIcon}
                     </button>
                 </div>
             
             
 
-            {error && <p className={styles.errorMessage}>{error}</p>}
+                {error && <p className={styles.errorMessage}> <InfoCircledIcon style={{width:'13.25px', height:'13.25px'}}/> {error}</p>}
             </div>
             
             

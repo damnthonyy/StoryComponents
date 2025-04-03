@@ -26,7 +26,7 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
       };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} style={{ width: 'fit-content'}}>
             <InputEmail
             disabled={disabled}
             error={errors.email?.message as string}
@@ -43,7 +43,7 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
                 disabled={disabled}
                 error={errors.password?.message as string}
                 register={register('password', {
-                    required: 'Le mot de passe est requis',
+                    required: 'Please enter a correct password',
                 })}
 
             

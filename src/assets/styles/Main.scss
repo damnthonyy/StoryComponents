@@ -2,11 +2,10 @@
 @use './Fonts.scss';
 
 *{
-    padding: 0;
-    margin: 0;
-    font-family: v.$font-Poppins;
-  }
-  
-body{
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  font-family: v.$font-Poppins;
+  box-sizing: border-box;
+}
+
+

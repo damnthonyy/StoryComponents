@@ -3,7 +3,7 @@ import './Button.scss';
 
 
 interface ButtonProps{
-    variant?: 'SignIn' | 'Edit' | 'Delete' | 'GetLink'
+    variant?: 'SignIn' | 'SignInValid' | 'Edit' | 'Delete' | 'GetLink'
     label?:string
     onClick?:()=>void
 }

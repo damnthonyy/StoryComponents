@@ -27,6 +27,13 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)} style={{ width: 'fit-content'}} className='login-form'>
+            
+            <div className='login-form-header'>
+                <h1 className='login-form-title'>Welcome back 👋🏾</h1>
+                <p className='login-form-subtitle'>The quick brown fox jumps over the lazy dog lorem ipsum.</p>
+            </div>
+            
+
             <InputEmail
             disabled={disabled}
             error={errors.email?.message as string}

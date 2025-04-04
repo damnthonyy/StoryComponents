@@ -1,0 +1,19 @@
+@use '../../assets/styles/Variables.scss' as v;
+
+.forgot-password{
+font-size: v.$h6;
+cursor: pointer;
+text-decoration: underline;
+color:v.$Colors-light-purple;
+text-align: right;
+display: block;
+padding-bottom: 10px;
+
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding:10px
+}

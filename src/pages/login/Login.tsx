@@ -26,7 +26,7 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
       };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} style={{ width: 'fit-content'}}>
+        <form onSubmit={handleSubmit(onSubmit)} style={{ width: 'fit-content'}} className='login-form'>
             <InputEmail
             disabled={disabled}
             error={errors.email?.message as string}
@@ -48,6 +48,8 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
 
             
             />
+
+            <span className='forgot-password'> Forgot Password ?</span>
 
             <Button variant='SignIn' label='Sign in' onClick={handleSubmit(onSubmit)}/>
 

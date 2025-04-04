@@ -53,6 +53,21 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
 
             <Button variant='SignIn' label='Sign in' onClick={handleSubmit(onSubmit)}/>
 
+            <div className='login-form-footer'>
+                <div className='login-form-footer-line'>
+                    <div className='login-form-footer-line-line'></div>
+                    <span className='login-form-footer-line-span'>Or</span>
+                    <div className='login-form-footer-line-line'></div>
+                </div>
+
+                <div className='SignUp'>
+                    <span className='SignUp-text'>Don't have an account ?
+                        <span className='SignUp-link'>Sign up</span>
+                    </span>
+                    
+                </div>
+            </div>
+
         
 
 

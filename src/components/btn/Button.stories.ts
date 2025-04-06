@@ -26,6 +26,13 @@ export const SignIn:Story={
         onClick:()=>{}
     }
 }
+export const SignInValid:Story={
+    args:{
+        label:'Sign in',
+        variant:'SignInValid',
+        onClick:()=>{}
+    }
+}
 
 export const Edit:Story={
     args:{

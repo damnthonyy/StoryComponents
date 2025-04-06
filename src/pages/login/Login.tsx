@@ -27,10 +27,17 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
         mode: "onChange"
       });
 
-    // Surveiller les changements de validité du formulaire
+    // Observer les champs du formulaire
+    const emailValue = watch('email');
+    const passwordValue = watch('password');
+
+    // Vérifier si les champs sont remplis et valides
     useEffect(() => {
-      setIsFormValid(isValid);
-    }, [isValid]);
+      const isEmailValid = Boolean(emailValue) && !errors.email;
+      const isPasswordValid = Boolean(passwordValue) && !errors.password;
+      
+      setIsFormValid(isEmailValid && isPasswordValid);
+    }, [emailValue, passwordValue, errors.email, errors.password]);
 
     const onSubmit: SubmitHandler<FormInputs> = (data) => {
         console.log('Données du formulaire :', data);

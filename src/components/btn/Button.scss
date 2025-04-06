@@ -16,17 +16,13 @@
     &--SignIn {
         background-color:v.$Colors-light-purple;
         color: white;
-        &:hover {
-            background-color: v.$Colors-dark-purple;
-        }
+        
     }
 
     &--SignInValid {
         background-color: v.$Colors-dark-purple;
         color: white;
-        &:hover {
-            background-color: darken(v.$Colors-dark-purple, 10%);
-        }
+       
     }
 
     &--Edit {

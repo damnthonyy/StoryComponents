@@ -5,6 +5,7 @@ import {InputPassword} from '../../components/InputPassword/InputPassword'
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { Button } from '../../components/btn/Button';
 import img1 from '../../assets/images/img1.jpeg';
+import { Link } from 'react-router-dom';
 
 interface FormInputs {
     email: string;
@@ -70,7 +71,7 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
                             required: 'Please enter a correct password',
                         })}
                     />
-                    <span className='forgot-password'> Forgot Password ?</span>
+                    <Link to='/ResetPassword'> <span className='forgot-password'> Forgot Password ?</span> </Link>
                     <Button 
                       variant={isFormValid ? 'SignInValid' : 'SignIn'} 
                       label='Sign in' 
@@ -86,7 +87,7 @@ export const Login: React.FC<LoginFormProps> = ({disabled=false}) => {
 
                         <div className='SignUp'>
                             <span className='SignUp-text'>Don't have an account ?
-                                <span className='SignUp-link'>Sign up</span>
+                                <Link to=''> <span className='SignUp-link'>Sign up</span> </Link>
                             </span>
                             
                         </div>
